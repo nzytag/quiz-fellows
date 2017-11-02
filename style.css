@@ -1,1 +1,7 @@
-/*             Styling goes here            */
+
+h1 {
+font-size: 40px;
+color: black;
+width: auto;
+text-align: center;
+}

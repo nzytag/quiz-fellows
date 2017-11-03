@@ -7,11 +7,11 @@ var hourNow = today.getHours();
 var greeting;
 
 if (hourNow > 18) {
-  greeting = 'Good Evening! Welcome to Quiz Fellows!';
+  greeting = 'Good Evening! </br> Welcome to Quiz Fellows!';
 } else if (hourNow > 12) {
-  greeting = 'Good Afternoon! Welcome to Quiz Fellows!';
+  greeting = 'Good Afternoon! </br> Welcome to Quiz Fellows!';
 } else if (hourNow > 0) {
-  greeting = 'Good Morning! Welcome to Quiz Fellows';
+  greeting = 'Good Morning!</br> Welcome to Quiz Fellows';
 } else {
   greeting = 'Welcome!';
 }

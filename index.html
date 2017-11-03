@@ -4,12 +4,36 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
-    <title></title>
-
-
+    <title>Quiz Fellows</title>
   </head>
-  <body>
 
+  <body>
+    <header>
+    </header>
+    <main>
+      <h1>Welcome to Quiz Fellows!</h1>
+      <h2>A go-to study guide for 201 students</h2>
+
+      <form id="">
+          <fieldset>
+            <label for="name">Your Name</label>
+            <input type="text" name="name" placeholder="enter your name" required>
+          </fieldset>
+          <fieldset>
+            <select name="topics" size="3">
+              <option value="js">JavaScript</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="all">Give me all of it!</option>
+            </select>
+          </fieldset>
+        <button  id="submit_button" type="submit">Get Started</button>
+      </form>
+
+    </main>
+
+    <footer>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

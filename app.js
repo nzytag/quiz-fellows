@@ -1,11 +1,11 @@
-/*Quiz Fellows***********************
+/* Quiz Fellows***********************
 This is a study guide app that allows a user to choose a topic to study related to Code 201 material. After selecting the topic of study, the page will display 6 problems at a time that the user can use as a flashcard, when they hover (or click?) on a problem, the answer will become visable.
 *************************************/
 
 'use strict';
 
 //*** creating global variables ***
-var jsProblems =[]; //array of JS problems
+var jsProblems = []; //array of JS problems
 var allJsObj = []; //array of JS problem objects
 var cssProblems = []; //CSS problems
 var allCssObj = []; //CSS objects
@@ -27,12 +27,12 @@ function ProblemObject(problem) {
   this.problem = problem;
   this.path = 'img/' + problem;
   this.seen = false;
-}
+};
 
 //*** prototype function to add element tag ***
-ProblemObject.prototype.addImageTag () {
-  return '<img id="' + this.problem + '" src="' + this.path + '">'
-}
+ProblemObject.prototype.addImageTag = function () {
+  return '<img id="' + this.problem + '" src="' + this.path + '">';
+};
 
 //*** Turn each array of JS problems into array of objects
 allJsObj.push(
@@ -51,13 +51,13 @@ allHtmlObj.push(
   new ProblemObject(),
   new ProblemObject(),
   //...
-)
+);
 //*** Creates array of all problems into objects
 allProbObj.push(
   new ProblemObject(),
   new ProblemObject(),
   //...
-)
+);
 
 //*** Creates random number for range of index items of JS objects
 function randNumJsIndex () {
@@ -65,7 +65,7 @@ function randNumJsIndex () {
 }
 
 //*** Create random number for range of index items of CSS objects
-fuction randNumCssIndex () {
+function randNumCssIndex () {
   return Math.floor(Math.random() * allCssObj.length);
 }
 

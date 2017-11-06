@@ -1,1 +1,54 @@
-/*             Styling goes here            */
+
+
+.welcome {
+  color: white;
+  background: black;
+  font-size: 40px;
+  text-align: center;
+}
+h1 {
+  padding-top: 30px;
+}
+header {
+  height: 100px;
+background: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: red;
+}
+
+#sticky {
+  width:100%;
+  height:20px;
+  padding-top:6px;
+  color: red;
+  background-color: black;
+  font-size:16px;
+  font-family: 'arial';
+  text-align: center;
+  position: fixed; /*this is to keep it at the bottom*/
+  bottom: 4px;          /*to the bottom of the body/page*/
+  left:0;
+  display: block; /*and to the left of the body/page.*/
+}

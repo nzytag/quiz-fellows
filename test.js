@@ -21,7 +21,7 @@ var lastGen6;
 /*** CONSTRUCTOR FUNCTION ***/
 
 // constructor function
-function Problems(name) {
+function Problem(name) {
   this.name = name;
   this.path = './img/' + name + '.jpg';
   this.generated = 0;
@@ -31,7 +31,7 @@ function Problems(name) {
 
 // construction of new image objects that are pushed to images array
 for (var i = 0; i < problems.length; i++) {
-  problemsArray.push(new Image(problems[i]));
+  problemsArray.push(new Problem(problems[i]));
 }
 console.log(problemsArray);
 

@@ -4,23 +4,30 @@
 var jsProblems = [
   'bag.jpg', 'banana.jpg', 'bathroom.jpg', 'boots.jpg', 'breakfast.jpg', 'bubblegum.jpg', 'chair.jpg', 'cthulhu.jpg', 'dog-duck.jpg', 'dragon.jpg', 'pen.jpg', 'pet-sweep.jpg', 'scissors.jpg', 'shark.jpg', 'sweep.png', 'tauntaun.jpg', 'unicorn.jpg', 'usb.gif', 'water-can.jpg', 'wine-glass.jpg'
 ]; //array of JS problems
+//var jsProblemAnswers = [/**/];
 var allJsObj = []; //array of JS problem objects
 var prevJs = [0,1,2,3,4,5]; //index numbers related to problems
 var currJs = [6,7,8,9,10,11]; //index numbers representing problems in allJsObj array
-var probsOnDom = [ //array of DOM elements to input problems
-  document.getElementById('top-left'),
-  document.getElementById('top-center'),
-  document.getElementById('top-right'),
-  document.getElementById('bottom-left'),
-  document.getElementById('bottom-center'),
-  document.getElementById('bottom-right')
-];
+// var probsOnDom = [ //array of DOM elements to input problems
+//   document.getElementById('top-left'),
+//   document.getElementById('top-center'),
+//   document.getElementById('top-right'),
+//   document.getElementById('bottom-left'),
+//   document.getElementById('bottom-center'),
+//   document.getElementById('bottom-right')
+// ];
 //var btn = document.getElementsByTagName('button'); //refresh button
-var refresh = document.getElementById('refresh')
+var refresh = document.getElementById('refresh');
+var topLeft = document.getElementById('top-left');
+var topCenter = document.getElementById('top-center');
+var topRight = document.getElementById('top-right');
+var bottomLeft = document.getElementById('bottom-left');
+var bottomCenter = document.getElementById('bottom-center');
+var bottomRight = document.getElementById('bottom-right');
 
 function ProblemObject(problem) {
   this.problem = problem;
-  this.path = 'img/' + problem;
+  this.path = './img/' + problem;
   this.seen = false;
 };
 
@@ -81,23 +88,27 @@ function loadProbs() {
     webArr.push(currJs[d]);
     probIndex(currJs[d]).seen = true;
   }
-}
+};
 
-function probsToDom() {
-  loadProbs();
-  for (var e = 0; e < probsOnDom.length; e ++) {
-    probsOnDom[e].innerHTML = '<img id="' + webArr[e].problem + '" src="' + webArr[e].path + '">';
-  }
-}
-
-probsToDom();
+// function probsToDom() {
+//   loadProbs();
+//   topLeft.innerHTML = webArr[0];
+//   topCenter.innerHTML = currJs[1];
+//   topRight.innerHTML = currJs[2];
+//   bottomLeft.innerHTML = currJs[3];
+//   bottomCenter.innerHTML = currJs[4];
+//   bottomRight.innerHTML = currJs[5];
+// };
+//
+// probsToDom();
 
 function clickOnPage(event) {
+  console.log(event.target.id);
   for (var f = 0; f < prevJs.length; f ++) {
     probIndex(prevJs[f]).seen = false;
   }
   probsToDom();
-}
+};
 
 refresh.addEventListener('click', clickOnPage);
 

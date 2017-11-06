@@ -5,9 +5,9 @@ var jsProblems = [
   'bag.jpg', 'banana.jpg', 'bathroom.jpg', 'boots.jpg', 'breakfast.jpg', 'bubblegum.jpg', 'chair.jpg', 'cthulhu.jpg', 'dog-duck.jpg', 'dragon.jpg', 'pen.jpg', 'pet-sweep.jpg', 'scissors.jpg', 'shark.jpg', 'sweep.png', 'tauntaun.jpg', 'unicorn.jpg', 'usb.gif', 'water-can.jpg', 'wine-glass.jpg'
 ]; //array of JS problems
 var allJsObj = []; //array of JS problem objects
-var prevJs = [0,1,2,3,4,5];
-var currJs = [6,7,8,9,10,11];
-var probsOnDom = [
+var prevJs = [0,1,2,3,4,5]; //index numbers related to problems
+var currJs = [6,7,8,9,10,11]; //index numbers representing problems in allJsObj array
+var probsOnDom = [ //array of DOM elements to input problems
   document.getElementById('top-left'),
   document.getElementById('top-center'),
   document.getElementById('top-right'),
@@ -15,7 +15,8 @@ var probsOnDom = [
   document.getElementById('bottom-center'),
   document.getElementById('bottom-right')
 ];
-var btn = document.getElementsByTagName('button');
+//var btn = document.getElementsByTagName('button'); //refresh button
+var refresh = document.getElementById('refresh')
 
 function ProblemObject(problem) {
   this.problem = problem;
@@ -23,7 +24,7 @@ function ProblemObject(problem) {
   this.seen = false;
 };
 
-ProblemObject.prototype.addImageTag = function () {
+ProblemObject.prototype.addImageTag = function() {
   return '<img id="' + this.problem + '" src="' + this.path + '">';
 };
 
@@ -35,7 +36,7 @@ for (var a = 0; a < jsProblems.length; a ++) {
 compareIndex();
 
 //*** Creates random number for range of index items of JS objects
-function randIndexGen () {
+function randIndexGen() {
   var randIndex = Math.floor(Math.random() * allJsObj.length);
   for (var b = 0; b < prevJs.length; b ++) {
     while (randIndex === prevJs[0] || randIndex === prevJs[1] || randIndex === prevJs[2] || randIndex === prevJs[3] || randIndex === prevJs[4] || randIndex === prevJs[5]) {
@@ -46,7 +47,7 @@ function randIndexGen () {
 }
 
 //*** helper function that compares index numbers
-function compareIndex () {
+function compareIndex() {
   for (var c = 0; c < currJs.length; c ++) { //for each index in the array
     currJs[c] = randIndexGen();
     while (currJs[1] === currJs[0]) { //check the index to the others...
@@ -69,28 +70,55 @@ function compareIndex () {
 }
 
 //*** Helper function to recognize index of JS problem objects
-var probIndex = function (index) {
+function probIndex(index) {
   return allJsObj[index];
 };
 
-//*** Helper function that toggles problems as available to be displayed or not
-var updateProbsSeen = function () {
-  for (var i = 0; i < probsOnDom.length; i ++) {
-    probIndex(prevJs[i]).seen = false;
-    //probIndex(currJs[i]).seen = true;
+var webArr = [];
+function loadProbs() {
+  compareIndex();
+  for (var d = 0; d < currJs.length; d ++) {
+    webArr.push(currJs[d]);
+    probIndex(currJs[d]).seen = true;
   }
-};
+}
 
-function newProbs () {
-  for (var k = 0; k < probsOnDom.length; k ++) {
-    probsOnDom[k].innerHTML = '';
-    probsOnDom[k].innerHTML = probIndex(currJs[k]).addImageTag();
+function probsToDom() {
+  loadProbs();
+  for (var e = 0; e < probsOnDom.length; e ++) {
+    probsOnDom[e].innerHTML = '<img id="' + webArr[e].problem + '" src="' + webArr[e].path + '">';
   }
-};
+}
 
-function refreshBtn (event) {
-  updateProbsSeen();
-  newProbs();
-};
+probsToDom();
 
-btn.addEventListener('submit', refreshBtn);
+function clickOnPage(event) {
+  for (var f = 0; f < prevJs.length; f ++) {
+    probIndex(prevJs[f]).seen = false;
+  }
+  probsToDom();
+}
+
+refresh.addEventListener('click', clickOnPage);
+
+// //*** Helper function that toggles problems as available to be displayed or not
+// var updateProbsSeen = function () {
+//   for (var i = 0; i < probsOnDom.length; i ++) {
+//     probIndex(prevJs[i]).seen = false;
+//     //probIndex(currJs[i]).seen = true;
+//   }
+// };
+//
+// function newProbs () {
+//   for (var k = 0; k < probsOnDom.length; k ++) {
+//     probsOnDom[k].innerHTML = '';
+//     probsOnDom[k].innerHTML = probIndex(currJs[k]).addImageTag();
+//   }
+// };
+
+// function refreshBtn (event) {
+//   updateProbsSeen();
+//   newProbs();
+// };
+
+//refresh.addEventListener('click', refreshBtn);

@@ -42,13 +42,16 @@ li a:hover {
   width:100%;
   height:20px;
   padding-top:6px;
-  color: red;
+  color: white;
   background-color: black;
   font-size:16px;
-  font-family: 'arial';
+  font-family: 'Varela Round', sans-serif;
   text-align: center;
   position: fixed; /*this is to keep it at the bottom*/
-  bottom: 4px;          /*to the bottom of the body/page*/
+  bottom: 0px;          /*to the bottom of the body/page*/
   left:0;
   display: block; /*and to the left of the body/page.*/
+}
+span {
+  color: red;
 }

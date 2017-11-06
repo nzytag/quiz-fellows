@@ -9,6 +9,9 @@
   text-align: center;
 }
 h1 {
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 30px;
   padding-top: 30px;
 }
 img {
@@ -57,7 +60,10 @@ li a:hover {
   font-family: 'Varela Round', sans-serif;
   text-align: center;
   position: fixed; /*this is to keep it at the bottom*/
-  bottom: 4px;          /*to the bottom of the body/page*/
+  bottom: 0px;          /*to the bottom of the body/page*/
   left:0;
   display: block; /*and to the left of the body/page.*/
+}
+span {
+  color: red;
 }

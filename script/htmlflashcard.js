@@ -1,20 +1,29 @@
-'use strict';
+/*htmlflashcard************
+This is the code to display images of javascript questions and answers onto the htmlflashcard.html page.
+************************/
 
+'use strict';
 
 var problem = ['bag.jpg', 'banana.jpg', 'bathroom.jpg', 'boots.jpg', 'breakfast.jpg', 'bubblegum.jpg', 'chair.jpg', 'cthulhu.jpg', 'dog-duck.jpg', 'dragon.jpg'];
 
 var answer = ['pen.jpg', 'pet-sweep.jpg', 'scissors.jpg', 'shark.jpg', 'sweep.png', 'tauntaun.jpg', 'unicorn.jpg', 'usb.gif', 'water-can.jpg', 'wine-glass.jpg'];
 
-var topLeft = document.getElementById('top-left');
-var topCenter = document.getElementById('top-center');
-var topRight = document.getElementById('top-right');
-var bottomLeft = document.getElementById('bottom-left');
-var bottomCenter = document.getElementById('bottom-center');
-var bottomRight = document.getElementById('bottom-right');
+//*** four sets of flashcards will be displayed ***
+var topLeftQ = document.getElementById('top-left-q');
+var topLeftA = document.getElementById('top-left-a');
+var topRightQ = document.getElementById('top-right-q');
+var topRightA = document.getElementById('top-right-a');
+var bottomLeftQ = document.getElementById('bottom-left-q');
+var bottomLeftA = document.getElementById('bottom-left-a');
+var bottomRightQ = document.getElementById('bottom-right-q');
+var bottomRightA = document.getElementById('bottom-right-a');
 
-topLeft.innerHTML = '<img src="./img/' + problem[0] + '">' + '<img src="./img/' + answer[0] + '">' ;
-topCenter.innerHTML = '<img src="./img/' + problem[1] + '">' + '<img src="./img/' + answer[1] + '">';
-topRight.innerHTML = '<img src="./img/' + problem[2] + '">' + '<img src="./img/' + answer[2] + '">';
-bottomLeft.innerHTML = '<img src="./img/' + problem[3] + '">' + '<img src="./img/' + answer[3] + '">';
-bottomCenter.innerHTML = '<img src="./img/' + problem[4] + '">' + '<img src="./img/' + answer[4] + '">';
-bottomRight.innerHTML = '<img src="./img/' + problem[5] + '">' + '<img src="./img/' + answer[5] + '">';
+//putting images into the DOM, both problems and answers will be displayed, using CSS styles to control overall look
+topLeftQ.setAttribute('src', './htmlimg/' + problem[0]);
+topLeftA.setAttribute('src', './htmlimg/' + answer[0]);
+topRightQ.setAttribute('src', './htmlimg/' + problem[1]);
+topRightA.setAttribute('src', './htmlimg/' + answer[1]);
+bottomLeftQ.setAttribute('src', './htmlimg/' + problem[2]);
+bottomLeftA.setAttribute('src', './htmlimg/' + answer[2]);
+bottomRightQ.setAttribute('src', './htmlimg/' + problem[3]);
+bottomRightA.setAttribute('src', './htmlimg/' + answer[3]);

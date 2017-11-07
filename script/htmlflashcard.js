@@ -5,10 +5,10 @@ This is the code to display images of javascript questions and answers onto the 
 'use strict';
 
 //*** qustion bank array ***
-var problem = ['bag.jpg', 'banana.jpg', 'bathroom.jpg', 'boots.jpg', 'breakfast.jpg', 'bubblegum.jpg', 'chair.jpg', 'cthulhu.jpg', 'dog-duck.jpg', 'dragon.jpg'];
+var problem = ['qclasses.png', 'qdifference.png', 'qelement.png', 'qhead.png', 'qheaders.png', 'qhtml.png', 'qids.png', 'qindent.png', 'qinline.png', 'qlist.png', 'qmeta.png', 'qnest.png', 'qrender.png', 'qspan.png', 'qtag.png'];
 
 //*** answer bank array ***
-var answer = ['pen.jpg', 'pet-sweep.jpg', 'scissors.jpg', 'shark.jpg', 'sweep.png', 'tauntaun.jpg', 'unicorn.jpg', 'usb.gif', 'water-can.jpg', 'wine-glass.jpg'];
+var answer = ['aclasses.png', 'adifference.png', 'aelement.png', 'ahead.png', 'aheaders.png', 'ahtml.png', 'aids.png', 'aindent.png', 'ainline.png', 'alist.png', 'ameta.png', 'anest.png', 'arender.png', 'aspan.png', 'atag.png'];
 
 //*** four sets of flashcards will be displayed ***
 var topLeftQ = document.getElementById('top-left-q');

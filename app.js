@@ -24,22 +24,38 @@ function displayTime() {
 }
 displayTime(); //calls the date function
 
-//*** function to take user to corepsonding topic site that they have selected ***
 var form = document.getElementById('form');
-
-function goToTopic() {
-  if (event.target.value === 'javascript') {
-    window.location.assign('./script/jsflashcard.js');
+//*** function to take user to corepsonding topic site that they have selected ***
+function goToTopic(event) {
+  event.preventDefault();
+  // console.log('1234', event.target.elements[1].value);
+  var target = event.target.elements[1].value;
+  if (target === 'js') {
+    location = 'jsflashcard.html';
   }
-  if (event.target.value === 'html') {
-    window.location.assign('./script/htmlflashcard.html');
+  if (target === 'html') {
+    location = 'htmlflashcard.html';
   }
-  if (event.target.value === 'css') {
-    window.location.assign('./script/cssflashcard.html');
+  if (target === 'css') {
+    location = 'cssflashcard.html';
   }
-  if (event.target.value === 'git') {
-    window.location.assign('./script/gitflashcard.html');
+  if (target === 'git') {
+    location = 'gitflashcard.html';
   }
 };
 
+// var submitButton = document.getElementById('submit_button');
+// var jsSelect = document.getElementById('js');
+// var htmlSelect = document.getElementById('html');
+// var cssSelect = document.getElementById('css');
+// var gitSelect = document.getElementById('git');
+
+// console.log('submit button', form);
+// console.log('js selected', jsSelect, 'form ', form);
+// jsSelect.addEventListener('click', goToTopic);
+// htmlSelect.addEventListener('click', goToTopic);
+// cssSelect.addEventListener('click', goToTopic);
+// gitSelect.addEventListener('click', goToTopic);
+// form.addEventListener('submit', goToTopic);
+console.log('form', form);
 form.addEventListener('submit', goToTopic);

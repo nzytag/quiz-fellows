@@ -7,8 +7,7 @@
   </head>
   <body>
     <header>
-      <div class="welcome">
-      <script src="app.js"></script>  <!-- this is just here but we will move the location of the greeting to another .js file-->
+    <div class="welcome">
     </div>
 
 </header>
@@ -18,24 +17,19 @@
   <li><a href="htmlflashcard.html">HTML</a></li>
   <li><a href="gitflashcard.html">Git</a></li>
   <li><a class="active" href="index.html">Home</a></li>
-
 </ul>
   </header>
 <body>
 
     <main>
+      <form id="form">
 
-      <form>
         <fieldset>
-          <label for="name">Your Name</label>
-          <input type="text" name="name" placeholder="enter your name" required>
-        </fieldset>
-        <fieldset>
-          <select id="form" name="topics" size="3">
-            <option value="js">JavaScript</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="all">Give me all of it!</option>
+          <select name="topics" size="3">
+            <option id="js" value="js">JavaScript</option>
+            <option id="html" value="html">HTML</option>
+            <option id="css" value="css">CSS</option>
+            <option id="git" value="git">Git</option>
           </select>
         </fieldset>
         <button  id="submit_button" type="submit">Get Started</button>

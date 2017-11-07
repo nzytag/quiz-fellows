@@ -27,20 +27,23 @@ displayTime(); //calls the date function
 //*** function to take user to corepsonding topic site that they have selected ***
 var form = document.getElementById('form');
 
-function goToTopic() {
+function goToTopic(event) {
   event.preventDefault();
-  if (event.target.value === 'javascript') {
-    window.location.assign('./script/jsflashcard.js');
+  // console.log('1234', event.target.elements[1].value);
+  var target = event.target.elements[1].value;
+  if (target === 'js') {
+    location = 'jsflashcard.html';
   }
-  if (event.target.value === 'html') {
-    window.location.assign('./script/htmlflashcard.html');
+  if (target === 'html') {
+    location = 'htmlflashcard.html';
   }
-  if (event.target.value === 'css') {
-    window.location.assign('./script/cssflashcard.html');
+  if (target === 'css') {
+    location = 'cssflashcard.html';
   }
-  if (event.target.value === 'git') {
-    window.location.assign('./script/gitflashcard.html');
+  if (target === 'git') {
+    location = 'gitflashcard.html';
   }
 };
 
+//console.log('form', form);
 form.addEventListener('submit', goToTopic);

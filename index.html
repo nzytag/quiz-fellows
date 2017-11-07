@@ -8,8 +8,7 @@
   <body>
     <header>
       <div class="welcome">
-      <script src="app.js"></script>  <!-- this is just here but we will move the location of the greeting to another .js file-->
-    </div>
+      </div>
 
 </header>
 <ul>
@@ -25,24 +24,25 @@
 
     <main>
 
-      <form id="">
-          <fieldset>
-            <label for="name">Your Name</label>
-            <input type="text" name="name" placeholder="enter your name" required>
-          </fieldset>
-          <fieldset>
-            <select name="topics" size="3">
-              <option value="js">JavaScript</option>
-              <option value="html">HTML</option>
-              <option value="css">CSS</option>
-              <option value="all">Give me all of it!</option>
-            </select>
-          </fieldset>
+      <form id="form">
+        <fieldset>
+          <label for="name">Your Name</label>
+          <input type="text" name="name" placeholder="enter your name" required>
+        </fieldset>
+        <fieldset>
+          <select name="topics" size="3">
+            <option value="js">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="git">Git</option>
+          </select>
+        </fieldset>
         <button  id="submit_button" type="submit">Get Started</button>
       </form>
 
     </main>
 
     <footer id="sticky">Quiz Fellows is brought to you with <span>&hearts;</span> by Melanie, Tama, Mitchell and Hector!</footer>
+    <script src="app.js"></script>
   </body>
 </html>

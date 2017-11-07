@@ -2,12 +2,12 @@
 This is the code to display images of javascript questions and answers onto the jsflashcard.html page.
 ************************/
 
-
 'use strict';
-//*** array of problem images ***
+
+//*** qustion bank array ***
 var problem = ['qbreakpoint.png', 'qcall.png', 'qcomments.png', 'qconstructor.png', 'qdatatypes.png', 'qdom.png', 'qeventlistener.png', 'qfloor.png', 'qjson.png', 'qlocalstorage.png', 'qlocalvar.png', 'qloop.png', 'qobjecttype.png', 'qoperator.png', 'qscript.png', 'qthis.png', 'qvarname.png'];
 
-//*** array of answer images in same order as problems ***
+//*** answer bank array ***
 var answer = ['abreakpoint.png', 'acall.png', 'acomments.png', 'aconstructor.png', 'adatatypes.png', 'adom.png', 'aeventlistener.png', 'afloor.png', 'ajson.png', 'alocalstorage.png', 'alocalvar.png', 'aloop.png', 'aobjecttype.png', 'aoperator.png', 'ascript.png', 'athis.png', 'avarname.png'];
 
 //*** four sets of flashcards will be displayed ***

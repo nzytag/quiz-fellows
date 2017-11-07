@@ -44,18 +44,5 @@ function goToTopic(event) {
   }
 };
 
-// var submitButton = document.getElementById('submit_button');
-// var jsSelect = document.getElementById('js');
-// var htmlSelect = document.getElementById('html');
-// var cssSelect = document.getElementById('css');
-// var gitSelect = document.getElementById('git');
-
-// console.log('submit button', form);
-// console.log('js selected', jsSelect, 'form ', form);
-// jsSelect.addEventListener('click', goToTopic);
-// htmlSelect.addEventListener('click', goToTopic);
-// cssSelect.addEventListener('click', goToTopic);
-// gitSelect.addEventListener('click', goToTopic);
-// form.addEventListener('submit', goToTopic);
-console.log('form', form);
+//console.log('form', form);
 form.addEventListener('submit', goToTopic);

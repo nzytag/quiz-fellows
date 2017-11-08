@@ -20,9 +20,9 @@ function displayTime() {
     greeting = 'Welcome!';
   }
 
-  document.write('<h1>' + greeting + '<h/1>');
+  document.write('<h1>' + greeting + '</h1>');
 }
-displayTime(); //calls the date function
+// displayTime(); //calls the date function
 
 //*** function to take user to corepsonding topic site that they have selected ***
 var form = document.getElementById('form');

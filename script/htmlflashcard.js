@@ -1,14 +1,15 @@
-/*htmlflashcard************
+'use strict';
+
+/*** htmlflashcard************
 This is the code to display images of javascript questions and answers onto the htmlflashcard.html page.
 ************************/
-'use strict';
 /*** GLOBAL VARIABLE DECLARATIONS ***/
 
 //*** qustion bank array ***
-var question = ['qclasses.png', 'qdifference.png', 'qelement.png', 'qhead.png', 'qheaders.png', 'qhtml.png', 'qids.png', 'qinline.png', 'qinline.png', 'qlist.png', 'qmeta.png', 'qnest.png', 'qrender.png', 'qspan.png', 'qtag.png'];
+var question = ['qclasses.png', 'qdifference.png', 'qelement.png', 'qhead.png', 'qheaders.png', 'qhtml.png', 'qids.png', 'qinline.png', 'qinline.png', 'qlist.png', 'qlongtables', 'qmeta.png', 'qnest.png', 'qrender.png', 'qspan.png', 'qtag.png'];
 
 //*** answer bank array ***
-var answer = ['aclasses.png', 'adifference.png', 'aelement.png', 'ahead.png', 'aheaders.png', 'ahtml.png', 'aids.png', 'ainline.png', 'ainline.png', 'alist.png', 'ameta.png', 'anest.png', 'arender.png', 'aspan.png', 'atag.png'];
+var answer = ['aclasses.png', 'adifference.png', 'aelement.png', 'ahead.png', 'aheaders.png', 'ahtml.png', 'aids.png', 'ainline.png', 'ainline.png', 'alist.png', 'alongtables', 'ameta.png', 'anest.png', 'arender.png', 'aspan.png', 'atag.png'];
 
 var flashcardsArray = [];
 var genNum1;

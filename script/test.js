@@ -6,8 +6,6 @@ var question = ['qbreakpoint.png', 'qcall.png', 'qcomments.png', 'qconstructor.p
 //*** answer bank array ***
 var answer = ['abreakpoint.png', 'acall.png', 'acomments.png', 'aconstructor.png', 'adatatypes.png', 'adom.png', 'aeventlistener.png', 'afloor.png', 'ajson.png', 'alocalstorage.png', 'alocalvar.png', 'aloop.png', 'aobjecttype.png', 'aoperator.png', 'ascript.png', 'athis.png', 'avarname.png'];
 
-// var generations = 0;
-// var problems = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 var flashcardsArray = [];
 var genNum1;
 var genNum2;

@@ -18,6 +18,9 @@
   position: absolute;
   transition: transform 1s ease;
   backface-visibility: hidden;
+  /*background-color: #000;*/
+  /*border: 3px solid red;*/
+  background-image: url("./img/indexcard.png");
 }
 
 .-flipped {
@@ -39,7 +42,7 @@
 } */
 
 body {
-  background-color: #444;
+  background-color: #333;
 }
 h1 {
   text-align: center;
@@ -140,6 +143,7 @@ main h2 {
   text-align: center;
   margin-top: 20px;
   color: #fff;
+  font-family: 'Varela Round', sans-serif;
   font-size: 20px;
 }
 
@@ -187,6 +191,14 @@ span {
 }
 
 #button {
-  width: 80px;
-  height: 80px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background: #cc3524;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1em 1.5em;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
 }

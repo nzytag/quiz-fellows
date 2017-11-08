@@ -136,12 +136,20 @@ form button {
   font-size: 20px;
 }
 
-main ul.top {
+main ul.left {
   float:left;
 }
 
-main ul.bottom{
+main ul.left li {
+  margin:75px;
+}
+
+main ul.right{
   float:left;
+}
+
+main ul.right li {
+  margin: 75px;
 }
 
 #sticky {

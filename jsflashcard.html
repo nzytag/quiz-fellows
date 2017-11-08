@@ -23,23 +23,47 @@
   <body>
     <main>
       <h1>JavaScript Study Guide</h1>
-      <div>
-        <img id="top-left-q" src="">
-        <img id="top-left-a" src="">
-      </div>
-      <div>
-        <img id="top-right-q" src="">
-        <img id="top-right-a" src="">
-      </div>
-      <div>
-        <img id="bottom-left-q" src="">
-        <img id="bottom-left-a" src="">
-      </div>
-      <div>
-        <img id="bottom-right-q" src="">
-        <img id="bottom-right-a" src="">
-      </div>
+      <div class="container">
+        <p>Hover over the card to see it flip.</p>
 
+        <div class="container -column">
+          <div class="card-holder">
+            <div class="card -small -back -flipped">
+              <img id="top-left-a" src="">
+            </div>
+            <div class="card -small -front -black">
+              <a class="card--title"><img id="top-left-q" src=""></a>
+            </div>
+          </div>
+          <div class="card-holder">
+            <div class="card -small -back -flipped">
+              <img id="top-right-a" src="">
+            </div>
+
+            <div class="card -small -front -black">
+              <a class="card--title"> <img id="top-right-q" src=""></a>
+            </div>
+          </div>
+
+          <div class="card-holder">
+            <div class="card -small -back -flipped">
+              <img id="bottom-left-a" src="">
+            </div>
+            <div class="card -small -front -black">
+              <a class="card--title"><img id="bottom-left-q" src=""></a>
+            </div>
+          </div>
+
+          <div class="card-holder">
+            <div class="card -small -back -flipped">
+              <img id="bottom-right-a" src="">
+            </div>
+            <div class="card -front">
+              <a class="card--title"><img id="bottom-right-q" src=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="button">
         <button id="button" type="button" name="button"></button>
       </div>

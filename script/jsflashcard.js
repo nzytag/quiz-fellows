@@ -55,6 +55,7 @@ function numbersGenerator() {
   while (genNum1 === genNum4 || genNum2 === genNum4 || genNum3 === genNum4) {
     genNum4 = rNJesus();
   }
+  console.log('right before reset', flashcardsArray);
 }
 
 //*** four sets of flashcards will be displayed ***
@@ -95,7 +96,7 @@ function displayProblems() {
   flashcardsArray[genNum3].shown = true;
   flashcardsArray[genNum4].shown = true;
   resetShown();
-  console.log(flashcardsArray);
+  // console.log('after reset', flashcardsArray);
 }
 
 

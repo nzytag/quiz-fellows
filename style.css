@@ -30,15 +30,16 @@
 
 /* nav bar */
 
-.welcome {
+/* .welcome {
   font-family: 'Varela Round', sans-serif;
   font-size: 50px;
   color: white;
   background: black;
   text-align: center;
-}
+} */
+
 body {
-  background-color: black;
+  background-color: #444;
 }
 h1 {
   text-align: center;
@@ -47,42 +48,92 @@ h1 {
   font-size: 30px;
   padding-top: 30px;
 }
-img {
-  float: center;
-  width: 300px;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
 
 header {
-  height: 155px;
+  height: 80px;
   background: black;
 }
 
-#nav-bar {
+header section {
+  padding-top: 15px;
+}
+
+header img {
+  float:left;
+  margin-left: 80px;
+  width: 40px;
+}
+
+header h2 {
+  float: left;
+  font-family: helvetica;
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+header ul {
   font-family: 'Varela Round', sans-serif;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  margin-right: 80px;
 }
 
-body ul li {
+header li {
   float: right;
+  padding-right: 10px;
+  margin-right: 5px;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: red;
+header li a:hover {
+  background-color: #cc3524;
+  border-radius: 30px;
+  padding: 1em 1.5em
+}
+
+main {
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+form {
+  text-align: center;
+  padding: 30px;
+  color: #2c404c;
+  font-size: 25px;
+}
+
+form select {
+  width: 200px;
+  font-size: 25px;
+  font-family: helvetica;
+  height: 110px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+form button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background: #cc3524;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1em 1.5em;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 #sticky {
@@ -99,6 +150,7 @@ li a:hover {
   left:0;
   display: block; /*and to the left of the body/page.*/
 }
+
 span {
   color: red;
 }

@@ -9,7 +9,7 @@
   text-align: center;
 }*/
 body {
-  background-color: black;
+  background-color: #444;
 }
 h1 {
   text-align: center;
@@ -19,34 +19,39 @@ h1 {
   padding-top: 30px;
 }
 
+header {
+  height: 80px;
+  background: black;
+}
+
+header section {
+  padding-top: 15px;
+}
+
 header img {
   float:left;
-  margin-left: 20px;
+  margin-left: 80px;
+  width: 40px;
 }
 
 header h2 {
   float: left;
-  font-family: 'Varela Round', sans-serif;
+  font-family: helvetica;
   color: white;
-  font-size: 30px;
-  padding-top: 30px;
-}
-
-header {
-  height: 155px;
-  background: black;
+  font-size: 25px;
+  padding-top: 10px;
+  margin-left: 10px;
 }
 
 header ul {
   font-family: 'Varela Round', sans-serif;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  margin-right: 80px;
 }
 
 header li {
   float: right;
+  padding-right: 10px;
+  margin-right: 5px;
 }
 
 header li a {
@@ -59,9 +64,16 @@ header li a {
 
 /* Change the link color to #111 (black) on hover */
 header li a:hover {
-  background-color: red;
+  background-color: #cc3524;
   border-radius: 30px;
   padding: 1em 1.5em
+}
+
+main {
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 
 #sticky {

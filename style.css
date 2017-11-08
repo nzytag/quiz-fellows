@@ -136,6 +136,13 @@ form button {
   font-size: 20px;
 }
 
+main h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
 main ul.left {
   float:left;
 }

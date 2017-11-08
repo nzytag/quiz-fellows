@@ -1,10 +1,10 @@
 'use strict';
 
 /*** GLOBAL VARIABLE DECLARATIONS ***/
-var question = ['qbreakpoint.png', 'qcall.png', 'qcomments.png', 'qconstructor.png', 'qdatatypes.png', 'qdom.png', 'qeventlistener.png', 'qfloor.png', 'qjson.png', 'qlocalstorage.png', 'qlocalvar.png', 'qloop.png', 'qobjecttype.png', 'qoperator.png', 'qscript.png', 'qthis.png', 'qvarname.png'];
+var question = ['qbreakpoint.png', 'qcall.png', 'qcomments.png', 'qconstructor.png', 'qdatatypes.png', 'qdom.png', 'qeventlistener.png', 'qfloor.png', 'qjson.png', 'qlocalstorage.png', 'qlocalvar.png', 'qloop.png', 'qobjecttype.png', 'qoperator.png', 'qscript.png', 'qthis.png'];
 
 //*** answer bank array ***
-var answer = ['abreakpoint.png', 'acall.png', 'acomments.png', 'aconstructor.png', 'adatatypes.png', 'adom.png', 'aeventlistener.png', 'afloor.png', 'ajson.png', 'alocalstorage.png', 'alocalvar.png', 'aloop.png', 'aobjecttype.png', 'aoperator.png', 'ascript.png', 'athis.png', 'avarname.png'];
+var answer = ['abreakpoint.png', 'acall.png', 'acomments.png', 'aconstructor.png', 'adatatypes.png', 'adom.png', 'aeventlistener.png', 'afloor.png', 'ajson.png', 'alocalstorage.png', 'alocalvar.png', 'aloop.png', 'aobjecttype.png', 'aoperator.png', 'ascript.png', 'athis.png'];
 
 var flashcardsArray = [];
 var genNum1;
@@ -34,7 +34,7 @@ console.log(flashcardsArray);
 // random number generator to be used to select random problems
 function rNJesus() {
   var rng = Math.floor(Math.random() * flashcardsArray.length);
-  if (flashcardsArray[rng].shown === true) {
+  while (flashcardsArray[rng].shown === true) {
     rng = Math.floor(Math.random() * flashcardsArray.length);
   }
   return rng;
@@ -94,7 +94,22 @@ function displayProblems() {
   flashcardsArray[genNum2].shown = true;
   flashcardsArray[genNum3].shown = true;
   flashcardsArray[genNum4].shown = true;
+  resetShown();
+  console.log(flashcardsArray);
 }
+
+
+function resetShown () {
+  for (var i = 0; i < flashcardsArray.length; i++) {
+    if (flashcardsArray[i].shown === false) {
+      return;
+    }
+  }
+  for (var j = 0; j < flashcardsArray.length; j++) {
+    flashcardsArray[j].shown = false;
+  }
+}
+
 
 /*** FUNCTION INVOCATION ***/
 

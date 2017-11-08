@@ -72,12 +72,11 @@ var bottomRightA = document.getElementById('bottom-right-a');
 // adds event listeners for photos
 function addEventListeners() {
   var button = document.getElementById('button');
-  button.addEventListener('submit', selectedData);
+  button.addEventListener('click', selectedData);
 }
 
 // prevents page from reloading on submit and displays new flashcards
 function selectedData(event) {
-  event.preventDefault();
   displayProblems();
 }
 
@@ -98,10 +97,6 @@ function displayProblems() {
   flashcardsArray[genNum3].shown = true;
   flashcardsArray[genNum4].shown = true;
 }
-
-
-
-//function to fill up info for chart
 
 /*** FUNCTION INVOCATION ***/
 

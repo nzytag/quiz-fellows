@@ -28,6 +28,7 @@
   perspective: 1000px;
 }
 
+/* nav bar */
 
 .welcome {
   font-family: 'Varela Round', sans-serif;
@@ -57,7 +58,8 @@ header {
   height: 155px;
   background: black;
 }
-ul {
+
+#nav-bar {
   font-family: 'Varela Round', sans-serif;
     list-style-type: none;
     margin: 0;
@@ -66,8 +68,8 @@ ul {
     background-color: #333;
 }
 
-li {
-    float: right;
+body ul li {
+  float: right;
 }
 
 li a {
@@ -102,6 +104,7 @@ span {
 }
 
 .button {
+  display: inline-block;
   float: right;
   margin-bottom: 100px;
   width: 100px;

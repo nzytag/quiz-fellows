@@ -191,6 +191,14 @@ span {
 }
 
 #button {
-  width: 80px;
-  height: 80px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background: #cc3524;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1em 1.5em;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
 }

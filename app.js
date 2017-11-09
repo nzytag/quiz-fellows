@@ -24,13 +24,14 @@ This is the file that links to index.html, it will display a greeting that chang
 // }
 // displayTime(); //calls the date function
 
-//*** function to take user to corepsonding topic site that they have selected ***
+//*** function to take user to corepsonding topic site that they have selected and save name to localStorage ***
 var form = document.getElementById('form');
 
 function goToTopic(event) {
   event.preventDefault();
-  // console.log('1234', event.target.elements[1].value);
-  var target = event.target.elements[1].value;
+  // console.log('username', event.target.elements[1].value);
+  localStorage.setItem('username', event.target.elements[1].value);
+  var target = event.target.elements[3].value;
   if (target === 'js') {
     location = 'jsflashcard.html';
   }
@@ -47,3 +48,4 @@ function goToTopic(event) {
 
 //console.log('form', form);
 form.addEventListener('submit', goToTopic);
+// form.addEventListener('submit', saveName);

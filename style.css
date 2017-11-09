@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-body {
-  background: black;
-}
-=======
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
  /* flashcard animations */
->>>>>>> 93ec8216897475102c4094e784da8eb22ff71e28
 
 .card-holder {
   position: relative;
@@ -120,6 +114,15 @@ form {
   padding: 30px;
   color: #2c404c;
   font-size: 25px;
+}
+
+form input {
+  width:200px;
+  font-size: 25px;
+  font-family: helvetica;
+  text-align: center;
+  border-radius:10px;
+  margin-bottom: 10px;
 }
 
 form select {

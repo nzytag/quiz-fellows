@@ -3,33 +3,38 @@
   <head>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Quiz Fellows</title>
   </head>
   <body>
     <header>
-    <div class="welcome">
-    </div>
+      <section>
+        <img src="./img/quizfellowslogo.png">
+        <h2>Quiz Fellows</h2>
 
-</header>
-<ul>
-  <li><a href="jsflashcard.html">JavaScript</a></li>
-  <li><a href="cssflashcard.html">CSS</a></li>
-  <li><a href="htmlflashcard.html">HTML</a></li>
-  <li><a href="gitflashcard.html">Git</a></li>
-  <li><a class="active" href="index.html">Home</a></li>
-</ul>
-  </header>
-<body>
-
+        <nav>
+          <ul>
+            <li><a href="gitflashcard.html">Git</a></li>
+            <li><a href="cssflashcard.html">CSS</a></li>
+            <li><a href="htmlflashcard.html">HTML</a></li>
+            <li><a href="jsflashcard.html">JavaScript</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
     <main>
+      <h1>Please Enter Your Name and Select a Topic</h1>
       <form id="form">
-
+        <fieldset>
+          <input type="text" name="user" placeholder="enter your name" required>
+        </fieldset>
         <fieldset>
           <select name="topics" size="3">
-            <option id="js" value="js">JavaScript</option>
-            <option id="html" value="html">HTML</option>
-            <option id="css" value="css">CSS</option>
-            <option id="git" value="git">Git</option>
+            <option value="js">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="git">Git</option>
           </select>
         </fieldset>
         <button  id="submit_button" type="submit">Get Started</button>

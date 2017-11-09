@@ -1,43 +1,172 @@
+<<<<<<< HEAD
 body {
   background: black;
 }
+=======
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
-.welcome {
+ /* flashcard animations */
+>>>>>>> 93ec8216897475102c4094e784da8eb22ff71e28
+
+.card-holder {
+  position: relative;
+  width: 300px;
+  height: 140px;
+}
+.card-holder:hover .card.-front {
+  transform: rotateY(-0.5turn);
+}
+.card-holder:hover .card.-back {
+  transform: rotateY(0turn);
+}
+
+.card {
+  position: absolute;
+  transition: transform 1s ease;
+  backface-visibility: hidden;
+  /*background-color: #000;*/
+  /*border: 3px solid red;*/
+  background-image: url("./img/indexcard.png");
+}
+
+.-flipped {
+  transform: rotateY(0.5turn);
+}
+
+.container {
+  perspective: 1000px;
+}
+
+/* nav bar */
+
+/* .welcome {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 50px;
   color: white;
   background: black;
-  font-size: 40px;
   text-align: center;
+} */
+
+body {
+  background-color: #333;
 }
 h1 {
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  font-size: 30px;
   padding-top: 30px;
 }
+
 header {
-  height: 100px;
-background: black;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  height: 80px;
+  background: black;
 }
 
-li {
-    float: right;
+header section {
+  padding-top: 15px;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+header img {
+  float:left;
+  margin-left: 80px;
+  width: 40px;
+}
+
+header h2 {
+  float: left;
+  font-family: helvetica;
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+header ul {
+  font-family: 'Varela Round', sans-serif;
+  margin-right: 80px;
+}
+
+header li {
+  float: right;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: red;
+header li a:hover {
+  background-color: #cc3524;
+  border-radius: 30px;
+  padding: 1em 1.5em
+}
+
+main {
+  clear: both;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+form {
+  text-align: center;
+  padding: 30px;
+  color: #2c404c;
+  font-size: 25px;
+}
+
+form select {
+  width: 200px;
+  font-size: 25px;
+  font-family: helvetica;
+  height: 110px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+form button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background: #cc3524;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1em 1.5em;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+main h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+}
+
+main ul.left {
+  float:left;
+}
+
+main ul.left li {
+  margin:75px;
+}
+
+main ul.right{
+  float:left;
+}
+
+main ul.right li {
+  margin: 75px;
 }
 
 #sticky {
@@ -45,7 +174,7 @@ li a:hover {
   height:20px;
   padding-top:6px;
   color: white;
-  background-color: black;
+  background-color: #333;
   font-size:16px;
   font-family: 'Varela Round', sans-serif;
   text-align: center;
@@ -54,6 +183,28 @@ li a:hover {
   left:0;
   display: block; /*and to the left of the body/page.*/
 }
+
 span {
   color: red;
+}
+
+.button {
+  display: inline-block;
+  float: right;
+  margin-bottom: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+#button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background: #cc3524;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1em 1.5em;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
 }

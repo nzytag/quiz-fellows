@@ -1,6 +1,6 @@
 'use strict';
 
-var form = document.getElementById('form');
+var form = document.getElementById('quiz');
 var answerBank = ['a', 'b', 'c', 'a', 'd'];
 var correct = [];
 var score = 0;

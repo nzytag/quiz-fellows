@@ -1,7 +1,7 @@
 'use strict';
 
 var form = document.getElementById('quiz');
-var answerBank = ['a', 'b', 'c', 'a', 'd'];
+var answerBank = ['b', 'b', 'c', 'c', 'd'];
 var correct = [];
 var score = 0;
 var maxScore = 5;

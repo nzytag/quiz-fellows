@@ -266,3 +266,9 @@ ul.quiz-button li a{
   padding: 14px 16px;
   text-decoration: none;
 }
+
+#canvas {
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+}

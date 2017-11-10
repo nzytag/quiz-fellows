@@ -216,11 +216,15 @@ span {
   font: bold 14px Helvetica;
   color: white;
   margin-bottom: 10px;
+  font-size: 20px;
+  text-align: left;
 }
 
 .qselections {
   font: normal 13px Helvetica;
   color: white;
+  font-size: 17px;
+  text-align: left;
 }
 
 .question {

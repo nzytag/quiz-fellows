@@ -235,3 +235,30 @@ span {
 #quiz input {
   width: inherit;
 }
+
+ul.quiz-button {
+  font-family: 'Varela Round', sans-serif;
+  margin-right: 80px;
+}
+
+ul.quiz-button li {
+  width: 200px;
+  margin: 10px auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background: #cc3524;
+  color: #fff;
+  border-radius: 30px;
+  padding: 1em 1.5em;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+ul.quiz-button li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
